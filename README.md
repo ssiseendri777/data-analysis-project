@@ -1,2 +1,3 @@
-# data-analysis-project
-Python data analysis project using public dataset.
+# Data Analysis Project
+First project using Python for data analysis.
+Work in progress.
