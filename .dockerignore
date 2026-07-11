@@ -1,0 +1,15 @@
+# Ignore Git and cache files
+.git
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints
+
+# Ignore local environment files
+.env
+*.log
+
+# Ignore large datasets if not needed in container
+data/raw/
+
