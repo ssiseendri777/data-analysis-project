@@ -108,3 +108,5 @@ webcolors
 webencodings
 websocket-client
 widgetsnbextension
+shap
+lime
