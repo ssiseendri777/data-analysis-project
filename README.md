@@ -43,3 +43,8 @@ cd data-analysis-project
 pip install -r requirements.txt
 jupyter notebook notebooks/final_summary.ipynb
 ```
+
+## Deployment Access
+
+Render URL: https://data-analysis-project-i8ns.onrender.com/
+Current Jupyter Token: 587e8f6de092cc25a77e5416541c2d36dee3718d83b8419b
