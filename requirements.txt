@@ -19,6 +19,7 @@ decorator
 defusedxml
 executing
 fastjsonschema
+flask
 fonttools
 fqdn
 h11
@@ -51,6 +52,7 @@ jupyterlab_server
 jupyterlab_widgets
 kiwisolver
 lark
+lime
 MarkupSafe
 matplotlib
 matplotlib-inline
@@ -92,6 +94,7 @@ seaborn
 Send2Trash
 setuptools
 six
+shap
 soupsieve
 stack-data
 terminado
