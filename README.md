@@ -43,3 +43,13 @@ cd data-analysis-project
 pip install -r requirements.txt
 jupyter notebook notebooks/final_summary.ipynb
 ```
+
+## Flask API
+
+Input: JSON features  
+curl -X POST http://localhost:5000/predict \
+ -H "Content-Type: application/json" \
+ -d '{"features": [3,1,22,1,0,7.25,0,1,2,0]}'
+
+Output: Prediction result  
+Prediction: [0]
