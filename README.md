@@ -72,3 +72,12 @@ Example:
 ## Output in json
 {"prediction":0}
 
+## Swagger API Docs
+Swagger UI is integrated with Flasgger.
+
+- Docs URL: https://data-analysis-project-swagger.onrender.com/apidocs
+- Endpoints:
+  - `/predict` → POST with JSON features
+  - `/features` → GET expected feature names
+
+You can test endpoints directly in the browser via Swagger UI.

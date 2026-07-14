@@ -49,6 +49,8 @@ def predict():
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
+    
+
 @app.route("/features", methods=["GET"])
 def features():
     """
@@ -65,7 +67,12 @@ def features():
               items:
                 type: string
     """
-    return jsonify({"expected_features": list(model.feature_names_in_)})
+    return jsonify({
+        "expected_features": [
+            "Pclass","Sex","Age","SibSp","Parch",
+            "Fare","Embarked_Q","Embarked_S","FamilySize","IsAlone"
+        ]
+    })
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
