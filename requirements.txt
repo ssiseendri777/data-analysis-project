@@ -20,6 +20,7 @@ defusedxml
 executing
 fastjsonschema
 flask
+flasgger
 fonttools
 fqdn
 h11
