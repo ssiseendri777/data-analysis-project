@@ -27,7 +27,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Step 4: Run tests
+      # Step 4: Lint code
+      - name: Run flake8
+        run: |
+          flake8 app.py tests/
+
+      # Step 5: Run tests with coverage
       - name: Run tests
         run: |
-          PYTHONPATH=. pytest
+          PYTHONPATH=. coverage run -m pytest
+          coverage report -m
+
+      # Step 6: Docker build validation
+      - name: Build Docker image
+        run: |
+          docker build -t data-analysis-api .

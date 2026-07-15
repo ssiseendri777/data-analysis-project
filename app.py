@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify, request
 import joblib
 import numpy as np
 from flasgger import Swagger
@@ -9,9 +9,12 @@ swagger = Swagger(app)
 # Load model
 model = joblib.load("models/random_forest_model.pkl")
 
+
 @app.route("/")
 def home():
+    """Home endpoint."""
     return "Flask API is running. Use /predict endpoint."
+
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -31,7 +34,7 @@ def predict():
               type: array
               items:
                 type: number
-              example: [3,1,22,1,0,7.25,0,1,2,0]
+              example: [3, 1, 22, 1, 0, 7.25, 0, 1, 2, 0]
     responses:
       200:
         description: Prediction result
@@ -46,10 +49,9 @@ def predict():
         features = np.array(data["features"]).reshape(1, -1)
         prediction = model.predict(features)[0]
         return jsonify({"prediction": int(prediction)})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 400
+    except Exception as error:
+        return jsonify({"error": str(error)}), 400
 
-    
 
 @app.route("/features", methods=["GET"])
 def features():
@@ -67,12 +69,23 @@ def features():
               items:
                 type: string
     """
-    return jsonify({
-        "expected_features": [
-            "Pclass","Sex","Age","SibSp","Parch",
-            "Fare","Embarked_Q","Embarked_S","FamilySize","IsAlone"
-        ]
-    })
+    return jsonify(
+        {
+            "expected_features": [
+                "Pclass",
+                "Sex",
+                "Age",
+                "SibSp",
+                "Parch",
+                "Fare",
+                "Embarked_Q",
+                "Embarked_S",
+                "FamilySize",
+                "IsAlone",
+            ]
+        }
+    )
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

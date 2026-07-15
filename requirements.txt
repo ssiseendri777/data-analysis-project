@@ -13,12 +13,14 @@ cffi
 charset-normalizer
 comm
 contourpy
+coverage
 cycler
 debugpy
 decorator
 defusedxml
 executing
 fastjsonschema
+flake8
 flask
 flasgger
 fonttools
