@@ -79,6 +79,7 @@ pure_eval
 pycparser
 Pygments
 pyparsing
+pytest
 python-dateutil
 python-json-logger
 PyYAML
