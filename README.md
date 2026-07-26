@@ -132,9 +132,10 @@ This project was developed as part of a structured **30-day learning journey** t
 
 | Model | Accuracy | ROC-AUC |
 |--------|----------|---------|
-| Logistic Regression | 80.44% | 0.851 |
-| Random Forest | 82.68% | 0.830 |
-| Gradient Boosting | 80.44% | 0.821 |
+| Logistic Regression | 80.44% | 0.849 |
+| Decision Tree | 79.88% | 0.778 |
+| Random Forest | 82.68% | 0.827 |
+| Gradient Boosting | 81.56% | 0.821 |
 
 
 ---
@@ -156,7 +157,9 @@ data-analysis-project/
 │
 ├── models/
 │   ├── random_forest_model.pkl
+│   ├── logistic_model.pkl
 │   ├── gradient_boosting_model.pkl
+│   ├── decision_tree_model.pkl
 │   └── best_rf_model.pkl
 │
 ├── notebooks/
