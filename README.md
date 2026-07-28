@@ -153,6 +153,7 @@ data-analysis-project/
 │
 ├── data/
 │   ├── titanic.csv
+│   ├── titanic_feature_engineered.csv
 │   └── titanic_clean.csv
 │
 ├── models/
