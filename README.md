@@ -506,7 +506,7 @@ Berhampur University
 
 GitHub: https://github.com/ssiseendri777
 
-LinkedIn: https://www.linkedin.com/in/siseendri-s-6061b6383
+LinkedIn: https://www.linkedin.com/in/ssiseendri777
 
 Portfolio: 
 
